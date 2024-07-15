@@ -136,6 +136,24 @@ nav li {
     margin-right: 20px;
 }
 
+#logo {
+    width: 61.09px;
+height: 19px;
+gap: 0px;
+opacity: 0px;
+
+}
+
+nav a {
+    text-decoration: none;
+}
+
+nav a:hover {
+    text-decoration: overline;
+    color:#0065FC;
+    
+    ;
+}
 
 
 
