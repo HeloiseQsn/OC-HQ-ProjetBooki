@@ -67,7 +67,7 @@ header {
     align-items:center;
     justify-content: space-between;
     height:79px;
-    width:100%;
+    width:calc(100%-50px);
     }
 
     .logo_reservia {
@@ -124,7 +124,7 @@ header {
 
 .barre-recherche{
     height: 281px;
-    width:calc(100%*(1340/1440));
+    width:calc(100%*(1340/1440)-50px);
     gap:35px;
     background-color: rgb(187, 232, 7);
     }
@@ -135,7 +135,7 @@ header {
 .hebergements-and-populaires {
     display: flex;
     justify-content: space-between;
-    width:calc(100%*(1340/1440));
+    width:calc(100%*(1340/1440)-50px);
     height:640px;
     gap:40px;
 }
@@ -202,9 +202,9 @@ header {
 
 .activites{
     height:163px;
-    width:calc(100%*(1340/1440));
-    padding:30px;
+    width:calc((100%*(1340/1440))-50px);
     gap:30px;
+    padding:30px;
     background-color: rgb(161, 24, 24);
 }
 
@@ -212,7 +212,7 @@ header {
 /****** Footer ***********/
 
 footer{
-    width:calc(100%*1340/1440);
+    width:calc((100%*1340/1440)-50px);
     height:163px;
     background-color: rgb(24, 161, 60);
 }
