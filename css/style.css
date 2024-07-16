@@ -123,6 +123,10 @@ a {
 
 /*Début code Hélo*/
 
+.body1 {
+    margin:0px;
+}
+
 header {
     display :flex;
     align-items:center;
@@ -132,7 +136,7 @@ header {
     }
 
     .logo_reservia {
-        width:11.18%;
+        width:calc(100%*(161.09/1440));
         height:79px;
         padding:30px 50px 30px 50px;
         gap:10px;
@@ -148,7 +152,7 @@ header {
 
     nav {
         padding:0px 50px 0px 50px;
-        width:23.89%;
+        width: calc(100%*(344/1440));
         height: 35px;
         gap:68px;
         left:1096px;
@@ -156,7 +160,7 @@ header {
         }
 
         .buttons {
-            width:16.94%;
+            width:calc(100%*(244/344));
             height:35px;
             gap:68px;
             font-size: 16px;
@@ -167,20 +171,18 @@ header {
                 }
 
             nav a:hover {
-                text-decoration: overline;
                 color:#0065FC;
                 }
 
 
-nav ul {
-    list-style: none;
-    display: flex;
+            nav ul {
+                list-style: none;
+                display: flex;
+                }
 
-}
-
-nav li {
-    margin-right: 20px;
-}
+            nav li {
+                margin-right: 20px;
+                }
 
 
 /*Fin code Hélo*/
