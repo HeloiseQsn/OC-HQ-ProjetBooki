@@ -60,6 +60,11 @@ a {
     color: var(--main-bg-color)
 }
 
+h1{
+    font-size:22px;
+    line-height:25.83px;
+}
+
 /****** Header ***********/
 
 header {
@@ -124,6 +129,8 @@ header {
 
 /****** Encart de recherches ***********/
 
+
+
 .barre-recherche{
     display:flex;
     flex-direction: column;
@@ -133,6 +140,7 @@ header {
     width:calc(100%*(1340/1440)-50px);
     gap:35px;
     }
+
 
 
 /****** Hebergements And Populaires ***********/
