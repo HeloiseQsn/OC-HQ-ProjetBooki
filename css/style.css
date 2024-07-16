@@ -15,8 +15,6 @@
 
 .body1 {
     margin:0px;
-    display: flex;
-    justify-content: center;
 }
 
 
@@ -25,6 +23,8 @@
     max-width: 1440px;
     padding: 0 50px;
     box-sizing: border-box;
+    display: flex;
+    flex-direction:column;
 }
 
 a {
@@ -66,11 +66,13 @@ header {
     display :flex;
     align-items:center;
     justify-content: space-between;
-    height:79px;
+    min-height:79px;
     width:calc(100%-50px);
+    background-color: rgb(216, 41, 172);
     }
 
     .logo_reservia {
+        display:flex;
         width:calc(100%*(161.09/1440));
         height:79px;
         padding:30px 50px 30px 50px;
@@ -88,7 +90,7 @@ header {
     nav {
         padding:0px 50px 0px 50px;
         width: calc(100%*(344/1440));
-        height: 35px;
+        min-height: 35px;
         gap:68px;
         left:1096px;
         align-self:start;
@@ -96,7 +98,7 @@ header {
 
         .buttons {
             width:calc(100%*(244/344));
-            height:35px;
+            min-height:35px;
             gap:68px;
             font-size: 16px;
             }
@@ -123,7 +125,11 @@ header {
 /****** Encart de recherches ***********/
 
 .barre-recherche{
-    height: 281px;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-content:flex-start;
+    min-height: 281px;
     width:calc(100%*(1340/1440)-50px);
     gap:35px;
     background-color: rgb(187, 232, 7);
@@ -136,8 +142,9 @@ header {
     display: flex;
     justify-content: space-between;
     width:calc(100%*(1340/1440)-50px);
-    height:640px;
+    min-height:640px;
     gap:40px;
+    background-color: rgb(67, 59, 207);
 }
 
 .hebergements-and-populaires section {
@@ -201,7 +208,9 @@ header {
 /****** Activités ***********/
 
 .activites{
-    height:163px;
+    display:flex;
+    flex-direction:column;
+    min-height:163px;
     width:calc((100%*(1340/1440))-50px);
     gap:30px;
     padding:30px;
@@ -212,8 +221,9 @@ header {
 /****** Footer ***********/
 
 footer{
+    display:flex;
     width:calc((100%*1340/1440)-50px);
-    height:163px;
+    min-height:163px;
     background-color: rgb(24, 161, 60);
 }
 
