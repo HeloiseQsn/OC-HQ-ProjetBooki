@@ -13,10 +13,12 @@
     color: var(--main-color);
 }
 
-body {
+.body1 {
+    margin:0px;
     display: flex;
     justify-content: center;
 }
+
 
 .main-container {
     width: 100%;
@@ -58,10 +60,84 @@ a {
     color: var(--main-bg-color)
 }
 
+/****** Header ***********/
+
+header {
+    display :flex;
+    align-items:center;
+    justify-content: space-between;
+    height:79px;
+    width:100%;
+    }
+
+    .logo_reservia {
+        width:calc(100%*(161.09/1440));
+        height:79px;
+        padding:30px 50px 30px 50px;
+        gap:10px;
+        align-self:stretch;
+        }
+
+        #logo {
+            width: 61.09px;
+            height: 19px;
+            gap: 0px;
+            opacity: 0px;
+            }
+
+    nav {
+        padding:0px 50px 0px 50px;
+        width: calc(100%*(344/1440));
+        height: 35px;
+        gap:68px;
+        left:1096px;
+        align-self:start;
+        }
+
+        .buttons {
+            width:calc(100%*(244/344));
+            height:35px;
+            gap:68px;
+            font-size: 16px;
+            }
+
+            nav a {
+                text-decoration: none;
+                }
+
+            nav a:hover {
+                color:#0065FC;
+                }
+
+
+            nav ul {
+                list-style: none;
+                display: flex;
+                }
+
+            nav li {
+                margin-right: 20px;
+                }
+
+
+/****** Encart de recherches ***********/
+
+.barre-recherche{
+    height: 281px;
+    width:calc(100%*(1340/1440));
+    gap:35px;
+    background-color: rgb(187, 232, 7);
+    }
+
+
 /****** Hebergements And Populaires ***********/
+
 .hebergements-and-populaires {
     display: flex;
     justify-content: space-between;
+    width:calc(100%*(1340/1440));
+    height:640px;
+    gap:40px;
 }
 
 .hebergements-and-populaires section {
@@ -121,71 +197,27 @@ a {
     margin-bottom: 5px;
 }
 
-/*Début code Hélo*/
 
-.body1 {
-    margin:0px;
+/****** Activités ***********/
+
+.activites{
+    height:163px;
+    width:calc(100%*(1340/1440));
+    padding:30px;
+    gap:30px;
+    background-color: rgb(161, 24, 24);
 }
 
-header {
-    display :flex;
-    align-items:center;
-    justify-content: space-between;
-    height:79px;
-    flex-basis:100%;
-    }
 
-    .logo_reservia {
-        width:calc(100%*(161.09/1440));
-        height:79px;
-        padding:30px 50px 30px 50px;
-        gap:10px;
-        align-self:stretch;
-        }
+/****** Footer ***********/
 
-        #logo {
-            width: 61.09px;
-            height: 19px;
-            gap: 0px;
-            opacity: 0px;
-            }
-
-    nav {
-        padding:0px 50px 0px 50px;
-        width: calc(100%*(344/1440));
-        height: 35px;
-        gap:68px;
-        left:1096px;
-        align-self:start;
-        }
-
-        .buttons {
-            width:calc(100%*(244/344));
-            height:35px;
-            gap:68px;
-            font-size: 16px;
-            }
-
-            nav a {
-                text-decoration: none;
-                }
-
-            nav a:hover {
-                color:#0065FC;
-                }
+footer{
+    width:calc(100%*1340/1440);
+    height:163px;
+    background-color: rgb(24, 161, 60);
+}
 
 
-            nav ul {
-                list-style: none;
-                display: flex;
-                }
-
-            nav li {
-                margin-right: 20px;
-                }
-
-
-/*Fin code Hélo*/
 
 
 
