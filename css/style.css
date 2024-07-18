@@ -147,7 +147,6 @@ header {
 /****** Encart de recherches ***********/
 
 
-
 .encart-recherche{
     display:flex;
     flex-direction: column;
@@ -166,7 +165,6 @@ header {
     gap:24px;
     background-color: #FFFFFF;
     display:flex;
-    flex-direction: row;
     justify-content: flex-start;
 }
 
@@ -185,6 +183,7 @@ header {
     text-align: center;
     font-weight: 700;
     color:#000000;
+    line-height: 21.13px;
 }
 
 .submit{
@@ -199,6 +198,56 @@ header {
     text-align: center;
     font-weight: 700;
     color:#FFFFFF;
+    line-height: 21.13px;
+}
+
+.filtresrecherche{
+    display:flex;
+    align-items: center;
+    justify-content:flex-start;
+    height:50px;
+    gap:15px;
+}
+
+.textefiltre{
+    width:54px;
+    height:21px;
+    font-weight: 700;
+    font-size:18px;
+    line-height: 21.13px;
+    text-align: center;
+}
+
+.boutonfiltre{
+    height:50px;
+    border-radius: 25px;
+    border: 2px solid #D9D9D9;
+    background-color: transparent;
+    padding:4px 19px 4px 19px;
+    gap:10px;
+    font-weight: 700;
+    font-size:17px;
+    line-height:19.96px;
+    color:#000000;
+    display:flex;
+    flex-wrap: nowrap;
+    align-items: center;
+}
+
+#filtreeconomique{
+    width:173px;
+}
+
+#filtrefamilial{
+    width: 134px;
+}
+
+#filtreromantique{
+    width:170px;
+}
+
+#filtrenospepites{
+    width:167px;
 }
 
 
