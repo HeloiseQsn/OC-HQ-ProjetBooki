@@ -446,7 +446,7 @@ footer{
     justify-content: cent;
     width:calc((100%*1340/1440)-50px);
     min-height:163px;
-    background-color: var(--main-bg-color);
+    
 
 }
 
@@ -455,6 +455,7 @@ footer section{
     height:163px;
     padding:20px;
     gap:15px;
+    background-color: var(--main-bg-color);
 }
 
 footer li{
