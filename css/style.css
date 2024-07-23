@@ -9,6 +9,7 @@
     --filter-bg-color: #DEEBFF;
 }
 
+
 .fa-solid {
     color: var(--main-color);
 }
@@ -16,7 +17,6 @@
 .body1 {
     margin:0px;
 }
-
 
 .main-container {
     width: 100%;
@@ -30,7 +30,6 @@
 main, footer{
     padding: 0 50px;
 }
-
 
 a {
     color: inherit;
@@ -80,21 +79,18 @@ h2{
 
 header {
     display :flex;
-    align-items:center;
     justify-content: space-between;
+    align-items:stretch;
     height:79px;
     width:calc(100%-50px);
     padding:0 50px 0 0;
     }
 
-.logo_reservia {
-    display:flex;
-    justify-content:flex-start;
-    width:calc(100%*(161.09/1440));
+.logoheader {
+    width:11%;
     height:79px;
     padding:30px 50px 30px 50px;
     gap:10px;
-    align-self:stretch;
     }
 
 #logo {
@@ -105,29 +101,19 @@ header {
     }
 
 nav {
-    display:flex;
-    justify-content:flex-end;
+    align-self: flex-start;
     padding:0px 50px 0px 50px;
-    width: calc(100%*(344/1440));
+    width: 24%;
     min-height: 35px;
     gap:68px;
     left:1096px;
-    align-self:start;
         }
 
-.buttons {
-    width:calc(100%*(244/344));
+nav ul {
+    width:70%;
     min-height:35px;
     gap:68px;
     font-size: 16px;
-}
-
-nav a {
-    text-decoration: none;
-                }
-
-
-nav ul {
     list-style: none;
     display: flex;
     margin:0;
@@ -144,9 +130,7 @@ nav li:hover {
     border-top: 2px solid var(--main-color)
     }
 
-
 /****** Encart de recherches ***********/
-
 
 .encart-recherche{
     display:flex;
@@ -154,28 +138,27 @@ nav li:hover {
     justify-content: space-around;
     align-content:flex-start;
     min-height: 281px;
-    width:calc(100%*(1340/1440)-50px);
+    width:calc(100%-50px);
     gap:35px;
     }
 
-.barrederecherche {
-    width:calc(100%*(377/1340));
+#barrederecherche {
+    width:28%;
     height:49px;
     border-radius: 15px;
     border:1px solid var(--main-bg-color);
     gap:24px;
-    display:flex;
 }
 
 .boutonlocalisation {
-    width:calc(100%*(50/377));
+    width:13%;
     height:49px;
     border-radius: 15px 0px 0px 15px;
     border:1px solid var(--main-bg-color);
 }
 
 .search{
-    width:calc(100%*(147/377));
+    width:38%;
     height:21px;
     border:none;
     font-size:18px;
@@ -185,7 +168,8 @@ nav li:hover {
 }
 
 .submit{
-    width:calc(100%*(132/377));
+    float:right;
+    width:132px;
     height:49px;
     border-radius: 0px 15px 15px 0px;
     border: 1px solid var(--main-color);
@@ -257,12 +241,12 @@ nav li:hover {
     height:24px;
     gap:10px;
 }
-/****** Hebergements And Populaires ***********/
+/****** Hebergements et Populaires ***********/
 
-.hebergements-and-populaires {
+.hebergements-et-populaires {
     display: flex;
     justify-content: space-between;
-    width:calc(100%*(1340/1440)-50px);
+    width:calc(93%-50px);
     min-height:640px;
     gap:40px;
 }
@@ -278,7 +262,6 @@ nav li:hover {
 
 .hebergements{
     width:68%;
-    height:614px;
     padding:30px;
     gap:30px;
 }
@@ -348,7 +331,6 @@ nav li:hover {
 /****** Populaires ***********/
 .populaires {
     width: 32%;
-    height:614px;
 }
 
 .populaires-title {
@@ -398,7 +380,7 @@ nav li:hover {
     flex-direction: row;
     justify-content: center;
     height:559.02px;
-    width:calc(100%*(1340/1440));
+    width:93%;
     gap:30px;
     padding:30px;
 }
@@ -444,7 +426,7 @@ nav li:hover {
 footer{
     display:flex;
     justify-content: cent;
-    width:calc((100%*1340/1440)-50px);
+    width:calc(93%-50px);
     min-height:163px;
     
 
@@ -456,10 +438,6 @@ footer section{
     padding:20px;
     gap:15px;
     background-color: var(--main-bg-color);
-}
-
-footer li{
-
 }
 
 footer ul{
