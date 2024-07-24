@@ -27,6 +27,7 @@
     gap:30px;
 }
 
+
 main, footer{
     padding: 0 50px;
 }
@@ -107,7 +108,9 @@ header {
     /***Menu de navigation***/
 
 nav {
+    display:flex;
     align-self: flex-start;
+    justify-content:flex-end;
     padding:0px 50px 0px 50px;
     width: 24%;
     min-height: 35px;
@@ -133,8 +136,8 @@ nav li {
 
 nav li:hover {
     color:var(--main-color);            
-    border-top: 2px solid var(--main-color)
-    }
+    border-top: 2px solid var(--main-color);
+}
 
 /****** Encart de recherches ***********/
 
@@ -145,6 +148,7 @@ nav li:hover {
     align-content:flex-start;
     width:calc(100%-50px);
     gap:35px;
+    margin-bottom: 30px;
     }
 
     /***Barre de recherche***/
@@ -165,7 +169,7 @@ nav li:hover {
     width:15%;
     min-width: 50px;
     font-size:18px;
-    height:49px;
+    box-sizing: border-box;
     border-radius: 15px 0px 0px 15px;
     border:none;
     padding: 15px 0px 15px 0px;
@@ -176,18 +180,19 @@ nav li:hover {
 .zonesaisieville{
     width:45%;
     min-width: 147px;
-    height:47px;
     text-align: center;
     font-size:18px;
+    box-sizing: border-box;
     border:none;
+    font-weight:700;
 }
 
           /**Bouton Rechercher**/
 
 .boutonrecherche{
+    box-sizing:border-box;
     border:none;
     width:calc(40%-16px);
-    height:49px;
     border-radius: 0px 15px 15px 0px;
     background-color: var(--main-color);
     font-size:18px;
@@ -195,6 +200,10 @@ nav li:hover {
     color:#FFFFFF;
     padding:15px 16px 15px 16px;
     font-weight: 700;
+}
+
+.icone-recherche{
+    display:none;
 }
 
     /***Filtres de recherche***/
@@ -208,12 +217,9 @@ nav li:hover {
 }
 
 .textefiltre{
-    width:54px;
-    height:21px;
     font-weight: 700;
     font-size:18px;
     line-height: 21.13px;
-    text-align: center;
 }
 
 .boutonfiltre{
@@ -228,7 +234,6 @@ nav li:hover {
     line-height:19.96px;
     color:#000000;
     display:flex;
-    flex-wrap: nowrap;
     align-items: center;
 }
 
@@ -236,25 +241,11 @@ nav li:hover {
     background-color:var(--filter-bg-color);
 }
 
-.economique{
-    width:173px;
-}
-
-.familial{
-    width: 134px;
-}
-
-.romantique{
-    width:170px;
-}
-
-.nospepites{
-    width:167px;
-}
 
 .texteinforesultatsrecherche{
     width:100%;
     height:24px;
+    display:flex;
     gap:10px;
 }
 /****** Hebergements et Populaires ***********/
@@ -267,7 +258,7 @@ nav li:hover {
     gap:40px;
 }
 
-.hebergements-and-populaires section {
+.hebergements-et-populaires section {
     background-color: var(--main-bg-color);
     border-radius: 20px;
     padding: 30px;
@@ -278,6 +269,7 @@ nav li:hover {
 
 .hebergements{
     width:68%;
+    min-width:870.80px;
     padding:30px;
     gap:30px;
 }
@@ -340,7 +332,7 @@ nav li:hover {
     font-weight:700;
     font-size:18px;
     line-height: 21.13px;
-    margin-top:15px;
+    margin-top:30px;
 }
 
 
@@ -391,60 +383,53 @@ nav li:hover {
 
 
 /****** Activités ***********/
-.activites{
+
+.encartactivites{
+    width:calc(93%-50px);
     display:flex;
-    flex-direction: row;
-    justify-content: center;
-    height:559.02px;
-    width:93%;
+    flex-direction:column;
+    align-items: center;
     gap:30px;
     padding:30px;
 }
 
-.activites-title{
-    display:flex;
-    flex-direction: row;
-    justify-content:flex-start;
-    flex-wrap: wrap;
+.titre-activites {
     width:100%;
-    height:30.02px;
+    line-height: 25.83px;
     font-size: 22px;
     font-weight: 700;
-    line-height: 25.83px;
 }
 
-.activites-cards{
+
+.cartes-activites{
+    width:100%;
     display:flex;
-    justify-content: center;
-    width: 100%;
-    height:439px;
+    flex-direction:row;
     gap:30px;
 }
 
-.activites-cards .card{
-    width:297.5px;
-    height: 439px;
-    border-radius:20px;
-
-
+.cartes-activites a {
+    width: 25%;
 }
 
-.activites-cards img{
+.cartes-activites .card{
+    width: 100%;
+    height: 439px;
+    border-radius:20px;
+}
+
+.cartes-activites img{
     width:100%;
     height:380px;
     border-top-left-radius:20px;
     border-top-right-radius: 20px;
 }
-
-
 /****** Footer ***********/
 
 footer{
     display:flex;
-    justify-content: cent;
     width:calc(93%-50px);
-    min-height:163px;
-    
+    min-height:163px;  
 
 }
 
@@ -452,7 +437,6 @@ footer section{
     width:33%;
     height:163px;
     padding:20px;
-    gap:15px;
     background-color: var(--main-bg-color);
 }
 
@@ -461,16 +445,19 @@ footer ul{
     padding-left:0px;
     font-weight:400;
     font-size:16px;
-    line-height:18.78px;
+    line-height:21px;
 }
 
+footer li{
+    line-height:30px;
+}
 
 /* Le code ci-dessous correspond à la version responsive uniquement */
 
 /****** Media queries ***********/
 /* Medium devices (tablets, less/equal than 1024px) */
 @media (max-width: 1024px) {
-    .hebergements-and-populaires {
+    .hebergements-et-populaires {
         flex-direction: column;
     }
 
@@ -500,10 +487,20 @@ footer ul{
     .populaires-cards .card-subtitle {
         font-size: 13px;
     }
+
+    .rechercher-texte{
+        display:none;
+    }
+
+    .icone-recherche{
+        display:inline-block;
+    }
 }
 
 /* Small devices (phones, less than 768px) */
 @media (max-width: 767.98px) {
+
+
     /* ... */
 }
 
