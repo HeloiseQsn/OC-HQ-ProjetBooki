@@ -110,12 +110,13 @@ header {
 nav {
     display:flex;
     align-self: flex-start;
-    justify-content:flex-end;
+    justify-content:center;
     padding:0px 50px 0px 50px;
     width: 24%;
     min-height: 35px;
     gap:68px;
     left:1096px;
+   
         }
 
 nav ul {
@@ -126,6 +127,8 @@ nav ul {
     list-style: none;
     display: flex;
     margin:0;
+    padding:0;
+
     }
 
 nav li {
@@ -137,6 +140,7 @@ nav li {
 nav li:hover {
     color:var(--main-color);            
     border-top: 2px solid var(--main-color);
+
 }
 
 /****** Encart de recherches ***********/
@@ -272,6 +276,16 @@ nav li:hover {
     padding:30px;
     gap:30px;
 }
+
+
+.item:nth-child(n+1):nth-child(-n+3){
+    flex-basis:calc(33%-30px);
+}
+
+.item:nth-child(n+4):nth-child(-n+6){
+    flex-basis:calc(33%-30px);
+}
+
 
 .hebergements-title{
     display: flex;
@@ -507,13 +521,18 @@ footer li{
 /* Small devices (phones, less than 768px) */
 @media (max-width: 767.98px) {
 
-        header, footer, .cartes-activites{
-            flex-direction: column;
+    *{
+        box-sizing:border-box;
+    }
+
+    header, footer, .cartes-activites{
+    flex-direction: column;
         }
 
-        header, main{
-        padding-right: 0px;
+    header, main{
+    padding-right: 0px;
     }
+
 
     .logoheader{
         width:100%;
@@ -523,8 +542,17 @@ footer li{
     nav{
         width:100%;
         justify-content: center;
-        padding:0px;
+        border-bottom:2px solid var(--main-bg-color);
     }
+
+    nav li {
+        width:50%;
+    }
+
+    nav li:hover {
+        border-bottom: 2px solid var(--main-color);
+        border-top:none}
+
     
     .rechercher-texte{
         display:none;
@@ -545,7 +573,6 @@ footer li{
         width:44%;
         font-size:14PX;
     }
-
 
     .hebergements-et-populaires {
         flex-direction: column-reverse;
