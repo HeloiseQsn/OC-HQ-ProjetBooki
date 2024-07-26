@@ -84,7 +84,7 @@ header {
     justify-content: space-between;
     align-items:stretch;
     height:79px;
-    width:calc(100%-50px);
+    width:100%;
     padding:0 50px 0 0;
     }
 
@@ -273,6 +273,7 @@ nav li:hover {
 
 .hebergements{
     width:68%;
+    min-width:870.99px;
     padding:30px;
     gap:30px;
 }
@@ -352,6 +353,7 @@ nav li:hover {
 /****** Populaires ***********/
 .populaires {
     width: 32%;
+    min-width:429px;
     display:flex;
     flex-direction:column;
     justify-content:flex-start;
@@ -365,13 +367,15 @@ nav li:hover {
 
 .populaires-cards .card {
     display: flex;
+    width:369px;
+    height:146px;
     margin-top: 33px;
 
 }
 
 .populaires-cards img {
     width: 33%;
-    height: 136px;
+    height: 16px;
     border-top-left-radius: 20px;
     border-bottom-left-radius: 20px;
 }
@@ -539,6 +543,7 @@ footer li{
         display:flex;
         justify-content: center;
     }
+    
     nav{
         width:100%;
         justify-content: center;
