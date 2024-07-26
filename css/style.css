@@ -85,7 +85,6 @@ header {
     align-items:stretch;
     height:79px;
     width:100%;
-    padding:0 50px 0 0;
     }
 
     /***Logo***/
@@ -476,13 +475,6 @@ footer li{
 /* Le code ci-dessous correspond à la version responsive uniquement */
 
 /****** Media queries ***********/
-
-@media (min-width:1440px) {
-    .body1{
-        padding-left: 40px;
-        padding-right:40px}
-
-}
 
 /* Medium devices (tablets, less/equal than 1024px) */
 @media (max-width: 1024px) {
