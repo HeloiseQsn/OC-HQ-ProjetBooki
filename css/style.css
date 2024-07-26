@@ -440,7 +440,7 @@ nav li:hover {
 
 .cartes-activites .card{
     width: calc(100% - 10px);
-    height: calc(1.51*);
+    aspect-ratio: 0.66;
     border-radius:20px;
     padding:0;
 }
@@ -466,7 +466,20 @@ nav li:hover {
     font-weight:700;
     line-height:18.78px;
 }
-     
+
+
+/* tablette : 
+        - carte width 193.5px / height 270px / radius 20px
+        - photo : width 193.5px / height 200px / radius 20px 20px 0px 0px
+        - légende: width 193.5px / height 70px / radius 0px 0px 20px 20px
+        padding 20px 19px 20px 19px / gap 10px / weight 700 / font-size 16px / line height 18.78px
+        
+    desktop:
+        - carte width 297.5px / height 439px / radius 20px
+        - photo : width 297.5px / height 380px / radius 20px 20px 0px 0 px
+        - légende : width : 297.5px / height 59px / radius 0px 0px 20px 20px
+        padding 20px 19px 20px 19px / gap 10px / font-size 16px / line height 18.78px */
+       
 
 
 /****** Footer ***********/
