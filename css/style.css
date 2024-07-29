@@ -567,6 +567,10 @@ footer li{
         height:74%;
     }
 
+    .cartes-activites .card{
+        aspect-ratio: 193.5 / 270;
+    }
+
 }
 
 /* Small devices (phones, less than 768px) */
@@ -594,9 +598,7 @@ footer li{
         font-size:clamp(13px, calc(17 / 767.98 * 100vw), 17px);
         }
     
-        .cartes-activites .card{
-            aspect-ratio: 193.5 / 270;
-        }
+     
         /***********************************************************/
 
     *{
