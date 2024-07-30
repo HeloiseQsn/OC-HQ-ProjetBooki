@@ -55,38 +55,38 @@ h3{
     font-size:16px;
 }
 .fontmoy {
- font-size: 18px;
+    font-size: 18px;
 }
 /****** HEADER ***********/
 header { /*logo et menu de navigation*/
     width:100%;
     display :flex;
     justify-content: space-between;
-    }
+}
 .logoheader { /*Encart comprenant l'image logo*/
     width:11%;
     padding:30px 50px 30px 50px;
-    }
+}
 #logo { /*image logo*/
     width: 61.09px;
     height: 19px;
-    }    
+}    
 nav { /*Menu de navigation*/
     padding:0px 50px 0px 50px;
     width: 24%;
-    }
+}
 nav ul { /*Liste dans le menu de navigation*/
     gap:68px;
     list-style: none;
     display: flex;
     margin:0;
     padding:0;
-    }
+}
 nav li { /*Eléments de la liste : Hébergement / Activités*/
     padding-top:15px;
     width:100%;
     text-align:center;
-    }
+}
 nav li:hover { /*Barre bleu + changement de couleur de police des éléments de la liste lors du survol de la souris dessus*/
     color:var(--main-color);            
     border-top: 2px solid var(--main-color);
@@ -99,7 +99,7 @@ nav li:hover { /*Barre bleu + changement de couleur de police des éléments de 
     width:calc(100% - 50px);
     gap:35px;
     margin-bottom: 30px;
-    }
+}
 #barrederecherche{  /***Barre de recherche***/
     display:flex;
     height:49px;
@@ -226,6 +226,8 @@ nav li:hover { /*Barre bleu + changement de couleur de police des éléments de 
     align-items: center;
 }
 .ensemble-cartes-populaires{ /*Lien contenant carte individuelle*/
+    display:flex;
+    flex-direction:column;
     width:100%;
 }
 .ensemble-cartes-populaires .card { /*Carte contenant img et cart-content*/
@@ -310,4 +312,34 @@ footer ul{ /*Listes*/
 }
 footer li{ /*Eléments des listes*/
     line-height:30px;
+}
+
+/****** Media queries ***********/
+/* Medium devices (tablets, less/equal than 1024px) */
+@media (max-width: 1024px) {
+.encart-hebergements-et-populaires { 
+    flex-direction:column;
+}
+.ensemble-cartes-populaires{
+    flex-direction:row;
+    justify-content:space-between;
+}
+.ensemble-cartes-populaires a{
+    width:31%;
+}
+.encart-hebergements, .encart-populaires{
+    width:calc(100% - 50px);
+}
+.ensemble-cartes-populaires .card {
+    margin-top: 20px;
+}
+.filtresrecherche{
+    flex-wrap: wrap;
+}
+.textefiltre{ /*Texte "Filtres" avant boutons de filtres*/
+    flex-basis:100%;
+}
+.ensemble-cartes-activites{
+    height:270px;
+}
 }
