@@ -55,53 +55,40 @@ h2{
 .fontmoy {
  font-size: 18px;
 }
-/****** Header ***********/
-header {
+/****** HEADER ***********/
+header { /*logo et menu de navigation*/
+    width:100%;
     display :flex;
     justify-content: space-between;
-    align-items:stretch;
-    min-height:79px;
-    width:100%;
     }
-.logoheader { /*Logo*/
-    display:flex;
+.logoheader { /*Encart comprenant l'image logo*/
     width:11%;
-    height:79px;
     padding:30px 50px 30px 50px;
-    gap:10px;
     }
-#logo {
+#logo { /*image logo*/
     width: 61.09px;
     height: 19px;
     }    
 nav { /*Menu de navigation*/
-    display:flex;
-    align-self: flex-start;
-    justify-content:flex-start;
     padding:0px 50px 0px 50px;
     width: 24%;
-    min-height: 35px;
-    gap:68px;
-    left:1096px;
     }
-nav ul {
-    width:100%;
-    min-height:35px;
+nav ul { /*Liste dans le menu de navigation*/
     gap:68px;
     list-style: none;
     display: flex;
     margin:0;
     padding:0;
     }
-nav li {
-    display:flex;
-    margin-right: 20px;
-    gap:68px;
+nav li { /*Eléments de la liste : Hébergement / Activités*/
     padding-top:15px;
+    width:100%;
+    text-align:center;
     }
-nav li:hover {
+nav li:hover { /*Barre bleu + changement de couleur de police des éléments de la liste lors du survol de la souris dessus*/
     color:var(--main-color);            
     border-top: 2px solid var(--main-color);
+    line-height:16.78px;
 }
 /****** Main ***********/
 .encart-recherche{ /*Encart de recherche*/
