@@ -94,7 +94,6 @@ nav li:hover { /*Barre bleu + changement de couleur de police des éléments de 
 .encart-recherche{ /*Encart de recherche*/
     display:flex;
     flex-direction: column;
-    justify-content: space-around;
     width:calc(100% - 50px);
     gap:35px;
     margin-bottom: 30px;
@@ -108,27 +107,20 @@ nav li:hover { /*Barre bleu + changement de couleur de police des éléments de 
     border:1px solid var(--main-bg-color);
 }
 .boutonlocalisation { /**Bouton localisation**/
-    min-width: 50px; width:15%;
-    box-sizing: border-box;
+    width:15%;
     border-radius: 15px 0px 0px 15px;
     border:none;
     padding: 15px 0px 15px 0px;
 }
 .zonesaisieville{ /**zone de saisie**/
-    min-width: 147px; width:45%;
-    text-align: center;
-    box-sizing: border-box;
+    width:45%;
     border:none;
     font-weight:700;
-    padding-inline:0px;
 }
 .boutonrecherche{ /**Bouton Rechercher**/
-    box-sizing:border-box;
     border:none;
-    width:132px;
     border-radius: 0px 15px 15px 0px;
     background-color: var(--main-color);
-    text-align: center;
     color:#FFFFFF;
     padding:15px 16px 15px 16px;
     font-weight: 700;
