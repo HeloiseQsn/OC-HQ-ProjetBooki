@@ -206,7 +206,7 @@ nav li:hover { /*Barre bleu + changement de couleur de police des éléments de 
 .hebergements-cards .card-rating {
     margin-bottom: 5px;
 }
-.afficherplushebergement{
+.afficherplushebergement{ /*Bouton "Afficher plus"*/
     width:100%;
     font-weight:700;
     margin-top:30px;
@@ -231,8 +231,6 @@ nav li:hover { /*Barre bleu + changement de couleur de police des éléments de 
 }
 .populaires-cards .card {
     display: flex;
-    width:calc(100% - 10px);
-    height:146px;
     margin-top: 33px;
 }
 .populaires-cards img {
