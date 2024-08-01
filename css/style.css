@@ -108,6 +108,9 @@ nav li:hover { /*Barre bleu + changement de couleur de police des éléments de 
     gap:24px;
     border:1px solid var(--main-bg-color);
 }
+input:focus{
+   outline:none;
+}
 .boutonlocalisation { /**Bouton localisation**/
     width:15%;
     border-radius: 15px 0px 0px 15px;
