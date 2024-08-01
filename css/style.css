@@ -343,3 +343,107 @@ footer li{ /*Eléments des listes*/
     height:270px;
 }
 }
+/* Small devices (phones, less than 768px) */
+@media (max-width: 767.98px) {
+.encart-hebergements-et-populaires{
+flex-direction:column-reverse;
+}
+header,.ensemble-cartes-populaires, .ensemble-cartes-hebergements, .ensemble-cartes-activites, footer{
+    flex-direction:column;
+}
+main{
+    padding:0;
+}
+.logoheader{
+    width:calc(100% - 60px);
+    display:flex;
+    justify-content: center;
+    padding:30px;
+}
+nav{
+    border-bottom:2px solid var(--main-bg-color);
+    width:100%;
+    padding:0;
+}
+nav ul{
+    gap:0;
+}
+nav li {
+    margin-right:0;
+    padding-bottom: 15px;
+}
+nav li:hover {
+    border-bottom: 2px solid var(--main-color);
+    border-top:none;
+    line-height:20.78px;
+}
+.encart-recherche{
+    width:calc(100% - 40px);
+    padding:20px;
+}
+#barrederecherche{
+    width:335px;
+    justify-content:space-between;
+}
+.rechercher-texte{
+    display:none;
+}
+.boutonrecherche{
+    width:49px;
+    border-radius:15px;
+    filter:drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+.icone-recherche{
+    display:inline-block;
+}
+.boutonfiltre{
+    flex-basis:calc(50% - 10px);
+    font-size:14px;
+}
+.encart-hebergements-et-populaires section, footer{
+    padding:0;
+    border-radius:0;
+    width:100%;
+}
+.titre-icone-encartpopulaires, .encart-hebergements .section-title, .ensemble-cartes-populaires, .ensemble-cartes-hebergements{
+    padding:20px;
+    width:calc(100% - 40px);
+}
+.ensemble-cartes-populaires, .ensemble-cartes-hebergements, .ensemble-cartes-activites{
+    gap:15px;
+}
+.ensemble-cartes-hebergements .card, .ensemble-cartes-populaires .card{
+    margin-top:0;
+}
+.ensemble-cartes-populaires a{
+    width:100%;
+}
+.encart-hebergements .section-title, .ensemble-cartes-hebergements{
+    background-color: white;
+}
+.ensemble-cartes-hebergements .card-content{
+    justify-content: flex-start;
+    min-height:auto;
+}
+.encart-activites{
+    padding:30px;
+    width:calc(100% - 60px)
+}
+.ensemble-cartes-activites{
+    height:auto;
+    width:100%;
+}
+.ensemble-cartes-activites a{
+    height:200px;
+    width:100%;
+}
+.ensemble-cartes-activites .card{
+    width:100%;
+}
+.ensemble-cartes-activites img{
+    height:calc(100% - 19px - 40px);
+}
+footer section{
+    width:calc(100% - 40px);
+}
+}
