@@ -1,15 +1,15 @@
 /****** General ***********/
-*{
+*   {
     font-family: 'Raleway', sans-serif;
-}
-:root {
+    }
+:root{
     --main-color: #0065FC;
     --main-bg-color: #F2F2F2;
     --filter-bg-color: #DEEBFF;
-}
+    }
 .fa-solid {
     color: var(--main-color);
-}
+            }
 .body1 {
     margin:0px;
 }
@@ -74,7 +74,6 @@ header { /*logo et menu de navigation*/
 }    
 nav { /*Menu de navigation*/
     padding:0px 50px 0px 50px;
-    width: 24%;
 }
 nav ul { /*Liste dans le menu de navigation*/
     gap:68px;
