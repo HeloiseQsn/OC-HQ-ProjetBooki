@@ -47,12 +47,14 @@ h1, h2{
     font-size:22px;
     line-height:25.83px;
 }
+h3{
+    font-size:16px;
+    margin:0;
+}
 h4{
     font-size:18px;
     line-height:21.13px;
-}
-h3{
-    font-size:16px;
+    margin:0;
 }
 .fontmoy {
     font-size: 18px;
@@ -306,8 +308,12 @@ footer section{ /*Trois sections*/
     background-color: var(--main-bg-color);
 }
 footer ul{ /*Listes*/
+    display:flex;
+    flex-direction:column;
+    gap:15px;
     list-style: none;
     padding-left:0px;
+    margin:0;
 }
 footer li{ /*Eléments des listes*/
     line-height:30px;
