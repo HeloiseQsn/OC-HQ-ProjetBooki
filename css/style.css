@@ -288,17 +288,13 @@ input:focus{
 }
 .ensemble-cartes-activites img{
     width:100%;
-    height:calc(100% - 37.56px - 40px);
+    height:380px;
     border-top-left-radius:20px;
     border-top-right-radius: 20px;
 }
 .ensemble-cartes-activites .card-content{
     border-radius: 0 0 20px 20px;
     padding:20px 19px 20px 19px;
-}
-.ensemble-cartes-activites .card-title{ /*Contenu de la card-content*/
-    font-weight:700;
-    line-height:18.78px;
 }
 /****** Footer ***********/
 footer{
@@ -342,8 +338,8 @@ footer li{ /*Eléments des listes*/
 .textefiltre{ /*Texte "Filtres" avant boutons de filtres*/
     flex-basis:100%;
 }
-.ensemble-cartes-activites{
-    height:270px;
+.ensemble-cartes-activites img{
+    height:200px;
 }
 }
 /* Small devices (phones, less than 768px) */
@@ -437,14 +433,13 @@ nav li:hover {
     width:100%;
 }
 .ensemble-cartes-activites a{
-    height:200px;
     width:100%;
 }
 .ensemble-cartes-activites .card{
     width:100%;
 }
 .ensemble-cartes-activites img{
-    height:calc(100% - 19px - 40px);
+    height:141px;
 }
 footer section{
     width:calc(100% - 40px);
