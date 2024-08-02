@@ -105,7 +105,8 @@ nav li:hover { /*Barre bleu + changement de couleur de police des éléments de 
 #barrederecherche{  /***Barre de recherche***/
     display:flex;
     height:49px;
-    width:377px;
+    width:100%;
+    max-width:377px;
     border-radius: 15px;
     gap:24px;
     border:1px solid var(--main-bg-color);
@@ -387,7 +388,6 @@ nav li:hover {
     padding:20px;
 }
 #barrederecherche{
-    width:335px;
     justify-content:space-between;
 }
 .rechercher-texte{
