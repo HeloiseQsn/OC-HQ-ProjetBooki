@@ -348,9 +348,6 @@ footer li{ /*Eléments des listes*/
 }
 /* Small devices (phones, less than 768px) */
 @media (max-width: 767.98px) {
-    .encart-hebergements-et-populaires{
-        flex-direction:column-reverse;
-    }
     header,.ensemble-cartes-populaires, .ensemble-cartes-hebergements, .ensemble-cartes-activites, footer{
         flex-direction:column;
     }
@@ -401,6 +398,9 @@ footer li{ /*Eléments des listes*/
     .boutonfiltre{
         flex-basis:calc(50% - 10px);
         font-size:14px;
+    }
+    .encart-hebergements-et-populaires{
+        flex-direction:column-reverse;
     }
     .encart-hebergements-et-populaires section, footer{
         padding:0;
