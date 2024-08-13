@@ -339,6 +339,9 @@ footer li{ /*Eléments des listes*/ /*p5*/
     main{
         padding:0;
     }
+    nav, .encart-hebergements-et-populaires section, footer, .ensemble-cartes-populaires a,  .ensemble-cartes-activites, .ensemble-cartes-activites a, .ensemble-cartes-activites .card{
+        width:100%;
+    }
     .logoheader{ /*p7header*/
         width:calc(100% - 60px);
         display:flex;
@@ -347,7 +350,6 @@ footer li{ /*Eléments des listes*/ /*p5*/
     }
     nav{ /*p7header*/
         border-bottom:2px solid var(--main-bg-color);
-        width:100%;
         padding:0;
     }
     nav ul{ /*p7header*/
@@ -390,7 +392,6 @@ footer li{ /*Eléments des listes*/ /*p5*/
     .encart-hebergements-et-populaires section, footer{ /*p7hebergements*/
         padding:0;
         border-radius:0;
-        width:100%;
     }
     .titre-icone-encartpopulaires, .encart-hebergements .section-title, .ensemble-cartes-populaires, .ensemble-cartes-hebergements{/*p7hebergements*/
         padding:20px;
@@ -401,9 +402,6 @@ footer li{ /*Eléments des listes*/ /*p5*/
     }
     .ensemble-cartes-hebergements .card, .ensemble-cartes-populaires .card{/*p7hebergements*/
         margin-top:0;
-    }
-    .ensemble-cartes-populaires a{/*p7hebergements*/
-        width:100%;
     }
     .encart-hebergements .section-title, .ensemble-cartes-hebergements{/*p7hebergements*/
         background-color: white;
@@ -418,13 +416,6 @@ footer li{ /*Eléments des listes*/ /*p5*/
     }
     .ensemble-cartes-activites{ /*p7activites*/
         height:auto;
-        width:100%;
-    }
-    .ensemble-cartes-activites a{ /*p7activites*/
-        width:100%;
-    }
-    .ensemble-cartes-activites .card{ /*p7activites*/
-        width:100%;
     }
     .ensemble-cartes-activites img{ /*p7activites*/
         height:141px;
