@@ -31,7 +31,7 @@ a {
 .card img {
     object-fit: cover;
 }
-.euro {
+.weight700 {
     font-weight: 700;
 }
 .neutral-star {
@@ -65,6 +65,9 @@ h4{
 header, nav li, .ensemble-cartes-hebergements, .ensemble-cartes-hebergements img, .afficherplushebergement, .ensemble-cartes-populaires, .encart-activites .section-title, .encart-activites .section-title, .ensemble-cartes-activites img {
     width:100%;
 }
+ul{
+    list-style: none;
+}
 /****** HEADER ***********/
 header { /*logo et menu de navigation*/ /*p1*/
     justify-content: space-between;
@@ -81,7 +84,6 @@ nav { /*Menu de navigation*/ /*p1nav*/
 }
 nav ul { /*Liste dans le menu de navigation*/ /*p1nav*/
     gap:68px;
-    list-style: none;
     margin:0;
     padding:0;
 }
@@ -118,7 +120,6 @@ input:focus{ /*p2barre*/
 .zonesaisieville{ /**zone de saisie**/ /*p2barre*/
     width:45%;
     border:none;
-    font-weight:700;
     padding-left:0;
 }
 .boutonrecherche{ /**Bouton Rechercher**/ /*p2barre*/
@@ -127,7 +128,6 @@ input:focus{ /*p2barre*/
     background-color: var(--main-color);
     color:#FFFFFF;
     padding:15px 16px 15px 16px;
-    font-weight: 700;
 }
 .icone-recherche{ /*Icône de recherche qui s'affiche en small device uniquement en remplacement du texte recherche*/ /*p2barre*/
     display:none;
@@ -136,9 +136,6 @@ input:focus{ /*p2barre*/
     align-items: center;
     gap:15px;
 }
-.textefiltre{ /*Texte "Filtres" avant boutons de filtres*/ /*p2filtre*/
-    font-weight: 700;
-}
 .boutonfiltre{ /*Boutons de filtres*/ /*p2filtre*/
     height:50px;
     border-radius: 25px;
@@ -146,7 +143,6 @@ input:focus{ /*p2barre*/
     background-color: transparent;
     padding:4px 19px 4px 19px;
     gap:10px;
-    font-weight: 700;
     font-size:17px;
     align-items: center;
 }
@@ -158,7 +154,6 @@ input:focus{ /*p2barre*/
 }
 /****** Hebergements et Populaires ***********/
 .encart-hebergements-et-populaires {  /*p3*/
-    display: flex;
     gap:40px;
 }
 .encart-hebergements-et-populaires section { /*Blocs hébergement / populaire*/ /*p3*/
@@ -200,7 +195,6 @@ input:focus{ /*p2barre*/
     margin-bottom: 5px;
 }
 .afficherplushebergement{ /*Bouton "Afficher plus"*/ /*p3hebergement*/
-    font-weight:700;
     margin-top:30px;
 }
 /****** Populaires ***********/
@@ -275,7 +269,6 @@ footer section{ /*Trois sections*/ /*p5*/
 }
 footer ul{ /*Listes*/ /*p5*/
     gap:15px;
-    list-style: none;
     padding-left:0px;
     margin:0;
 }
