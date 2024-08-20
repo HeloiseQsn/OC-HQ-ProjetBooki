@@ -1,5 +1,10 @@
 /****** General ***********/
-
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 :root{
     --main-color: #0065FC;
     --main-bg-color: #F2F2F2;
