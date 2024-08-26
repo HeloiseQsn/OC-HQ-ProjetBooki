@@ -42,7 +42,6 @@ a {
 }
 h1, h2{
     margin:0;
-    padding-bottom:8px;
     font-size:22px;
     line-height:25.83px;
 }
@@ -160,7 +159,7 @@ input:focus{ /*p2barre*/
 #encart-hebergements-et-populaires {  /*p3*/
     gap:40px;
 }
-#ancrehebergement { /*Blocs hébergement / populaire*/ /*p3*/
+#encart-hebergements-et-populaires section { /*Blocs hébergement / populaire*/ /*p3*/
     background-color: var(--main-bg-color);
     border-radius: 20px;
     padding: 30px;
@@ -184,8 +183,8 @@ input:focus{ /*p2barre*/
     border-top-right-radius: 20px;
 }
 #ensemble-cartes-hebergements .card-content { /*Contenant card-title - card-subtitle - rating*/ /*p3hebergement*/
-    min-height:115px;
-    padding-left: 15px;
+    height:100%;
+    padding:0 15px;
     justify-content: space-between;
 }
 #ensemble-cartes-hebergements .card-title { /*p3hebergement*/
