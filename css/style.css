@@ -69,10 +69,10 @@ header, nav li, .ensemble-cartes-hebergements, .ensemble-cartes-hebergements img
 ul{
     list-style:none;
 }
-/****** HEADER ***********/
-header { /*logo et menu de navigation*/ /*p1*/
-    justify-content: space-between;
+.spacebetween{
+    justify-content:space-between;
 }
+/****** HEADER ***********/
 .logoheader { /*Encart comprenant l'image logo*/ /*p1logo*/
     padding:30px 50px 30px 50px;
 }
@@ -174,7 +174,6 @@ input:focus{ /*p2barre*/
 }
 .ensemble-cartes-hebergements{ /*Encart contenant les cartes*/ /*p3hebergement*/
     flex-wrap: wrap;
-    justify-content: space-between;  
 }
 .itemhebergement{ /*Positionnement des cartes en deux rangées de trois cartes*/ /*p3hebergement*/
     flex-basis:calc(33% - 30px);
@@ -190,7 +189,6 @@ input:focus{ /*p2barre*/
 .ensemble-cartes-hebergements .card-content { /*Contenant card-title - card-subtitle - rating*/ /*p3hebergement*/
     min-height:115px;
     padding-left: 15px;
-    justify-content: space-between;
 }
 .ensemble-cartes-hebergements .card-title { /*p3hebergement*/
     margin-top: 10px;
@@ -212,7 +210,6 @@ input:focus{ /*p2barre*/
     justify-content:flex-start;
 }
 .titre-icone-encartpopulaires { /*Titre encart*/ /*p3populaire*/
-    justify-content: space-between;
     align-items: center;
 }
 .ensemble-cartes-populaires .card { /*Carte contenant img et cart-content*/ /*p3populaire*/
@@ -227,7 +224,6 @@ input:focus{ /*p2barre*/
 .ensemble-cartes-populaires .card-content { /*Contenant card-title / card-subtitle / card-rating*/ /*p3populaire*/
     width: 67%;
     padding-left: 15px;
-    justify-content: space-between;
 }
 .ensemble-cartes-populaires .card-title { /*p3populaire*/
     margin-top: 10px;
