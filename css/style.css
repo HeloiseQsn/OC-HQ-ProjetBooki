@@ -169,6 +169,7 @@ input:focus{ /*p2barre*/
 }
 .ensemble-cartes-hebergements .card{ /*Carte contenue dans bloc article a - contenant img + card-content*/ /*p3hebergement*/
     margin-top:33px;
+    flex-grow: 1;
 }
 .ensemble-cartes-hebergements img{ /*p3hebergement*/
     width:100%;
@@ -177,8 +178,7 @@ input:focus{ /*p2barre*/
     border-top-right-radius: 20px;
 }
 .ensemble-cartes-hebergements .card-content { /*Contenant card-title - card-subtitle - rating*/ /*p3hebergement*/
-    min-height:115px;
-    padding-left: 15px;
+    padding:0 1em 0 1em;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -226,7 +226,7 @@ input:focus{ /*p2barre*/
 }
 .ensemble-cartes-populaires .card-content { /*Contenant card-title / card-subtitle / card-rating*/ /*p3populaire*/
     width: 67%;
-    padding-left: 15px;
+    padding : 0 1em 0 1em;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -253,7 +253,6 @@ input:focus{ /*p2barre*/
 }
 .encart-activites .section-title { /*Titre section Activités*/ /*p4*/
     width:100%;
-    line-height: 51.66px;
 }
 .ensemble-cartes-activites{ /*Contenant les cartes*/ /*p4*/
     display:flex;
@@ -274,7 +273,7 @@ input:focus{ /*p2barre*/
 }
 .ensemble-cartes-activites .card-content{ /*p4*/
     border-radius: 0 0 20px 20px;
-    padding:20px 19px 20px 19px;
+    padding: 1em;
 }
 footer{ /*p5*/
     display:flex;
@@ -378,6 +377,7 @@ footer li{ /*Eléments des listes*/ /*p5*/
         flex:1 1 calc(50% - 10px);
         font-size:14px;
         padding:0.75em;
+        justify-content: center;
     }
     .encart-hebergements-et-populaires{ /*p7hebergements*/
         flex-direction:column-reverse;
