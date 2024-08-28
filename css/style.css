@@ -6,20 +6,19 @@
 }
 *   {
     font-family: 'Raleway', sans-serif;
-    margin:0;
-    padding:0;
+    margin: 0;
+    padding: 0;
 }
 .fa-solid {
     color: var(--main-color);
 }
 body{
     max-width: 1440px;
-    margin:0 auto;
+    margin: 0 auto;
 }
 main, footer{
     padding: 0 50px;
 }
-
 a {
     color: inherit;
     text-decoration: none;
@@ -37,19 +36,16 @@ a {
     color: var(--main-bg-color)
 }
 h1, h2{
-    margin:0;
-    font-size:22px;
-    line-height:25.83px;
+    font-size: 22px;
+    line-height: 25.83px;
 }
 h3{
-    font-size:16px;
-    margin:0;
+    font-size: 16px;
 }
 h4{
-    font-size:18px;
-    line-height:21.13px;
-    margin:0;
-    padding-bottom:15px;
+    font-size: 18px;
+    line-height: 21.13px;
+    padding-bottom: 15px;
 }
 .fontmoy {
     font-size: 18px;
@@ -70,10 +66,13 @@ ul{
 header nav li, #ensemble-cartes-hebergements img, #afficherplushebergement, #ensemble-cartes-populaires, #ancreactivites .section-title, #ensemble-cartes-activites img {
     width:100%;
 }
-/****** HEADER ***********/
-header { /*logo et menu de navigation*/ /*p1*/
-    justify-content: space-between;
+.spbetween{
+    justify-content:space-between;
 }
+.alignicenter{
+    align-items:center;
+}
+/****** HEADER ***********/
 #logoheader { /*Encart comprenant l'image logo*/ /*p1logo*/
     padding:30px 50px 30px 50px;
 }
@@ -88,8 +87,8 @@ header nav ul { /*Liste dans le menu de navigation*/ /*p1nav*/
     gap:68px;
 }
 header nav li { /*Eléments de la liste : Hébergement / Activités*/ /*p1nav*/
-    padding-top:15px;
-    text-align:center;
+    padding-top:15px; 
+    text-align:center; /*nécessaire dans la version mobile*/
 }
 header nav li:hover { /*Barre bleu + changement de couleur de police des éléments de la liste lors du survol de la souris dessus*/ /*p1nav*/
     color:var(--main-color);            
@@ -108,7 +107,7 @@ header nav li:hover { /*Barre bleu + changement de couleur de police des éléme
     border:1px solid var(--main-bg-color);
 }
 input:focus{ /*p2barre*/
-   outline:none;
+    outline:none;
 }
 #boutonlocalisation { /**Bouton localisation**/ /*p2barre*/
     width:15%;
@@ -132,7 +131,6 @@ input:focus{ /*p2barre*/
     display:none;
 }
 #filtresrecherche{ /***Encart des filtres de recherche***/ /*p2filtre*/
-    align-items: center;
     gap:15px;
 }
 .boutonfiltre{ /*Boutons de filtres*/ /*p2filtre*/
@@ -143,7 +141,6 @@ input:focus{ /*p2barre*/
     padding:1em;
     gap:10px;
     font-size:17px;
-    align-items: center;
 }
 .boutonfiltre:hover{ /*Changement couleur de fond lors du survolement de la souris sur bouton de filtre*/ /*p2filtre*/
     background-color:var(--filter-bg-color);
@@ -165,9 +162,8 @@ input:focus{ /*p2barre*/
 }
 #ensemble-cartes-hebergements{ /*Encart contenant les cartes*/ /*p3hebergement*/
     flex-wrap: wrap;
-    justify-content: space-between;  
 }
-.itemhebergement{ /*Positionnement des cartes en deux rangées de trois cartes*/ /*p3hebergement*/
+#ensemble-cartes-hebergements a{ /*Positionnement des cartes en deux rangées de trois cartes*/ /*p3hebergement*/
     flex-basis:calc(33% - 30px);
 }
 #ensemble-cartes-hebergements .card{ /*Carte contenue dans bloc article a - contenant img + card-content*/ /*p3hebergement*/
@@ -181,7 +177,6 @@ input:focus{ /*p2barre*/
 }
 #ensemble-cartes-hebergements .card-content { /*Contenant card-title - card-subtitle - rating*/ /*p3hebergement*/
     padding:0 1em 0 1em;
-    justify-content: space-between;
 }
 #ensemble-cartes-hebergements .card-title { /*p3hebergement*/
     margin-top: 10px;
@@ -201,10 +196,6 @@ input:focus{ /*p2barre*/
     width: 32%;
     justify-content:flex-start;
 }
-#titre-icone-encartpopulaires { /*Titre encart*/ /*p3populaire*/
-    justify-content: space-between;
-    align-items: center;
-}
 #ensemble-cartes-populaires .card { /*Carte contenant img et cart-content*/ /*p3populaire*/
     margin-top: 33px;
 }
@@ -217,7 +208,6 @@ input:focus{ /*p2barre*/
 #ensemble-cartes-populaires .card-content { /*Contenant card-title / card-subtitle / card-rating*/ /*p3populaire*/
     width: 67%;
     padding : 0 1em 0 1em;
-    justify-content: space-between;
 }
 #ensemble-cartes-populaires .card-title { /*p3populaire*/
     margin-top: 10px;
@@ -233,7 +223,6 @@ input:focus{ /*p2barre*/
 #ancreactivites{ /*p4*/
     width:calc(100% - 50px);
     justify-content:center;
-    align-items: center;
     gap:30px;
     padding:30px;
 }
@@ -263,7 +252,6 @@ footer nav{ /*Trois sections*/ /*p5*/
 }
 footer ul{ /*Listes*/ /*p5*/
     gap:15px;
-    list-style: none;
     padding-left:0px;
     margin:0;
 }
