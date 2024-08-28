@@ -72,6 +72,10 @@ header nav li, #ensemble-cartes-hebergements img, #afficherplushebergement, #ens
 .alignicenter{
     align-items:center;
 }
+#ensemble-cartes-hebergements img, #ensemble-cartes-populaires img, #ensemble-cartes-activites img{
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
 /****** HEADER ***********/
 #logoheader { /*Encart comprenant l'image logo*/ /*p1logo*/
     padding: 1.87em 50px 1.87em 50px;
@@ -98,7 +102,7 @@ header nav li:hover { /*Barre bleu + changement de couleur de police des éléme
 /****** Main ***********/
 #encart-recherche{ /*Encart de recherche*/ /*p2*/
     gap:2.18em;
-    margin-bottom: 30px;
+    margin-bottom:1.87em;
 }
 #barrederecherche{  /***Barre de recherche***/ /*p2barre*/
     max-width:377px;
@@ -111,9 +115,9 @@ input:focus{ /*p2barre*/
 }
 #boutonlocalisation { /**Bouton localisation**/ /*p2barre*/
     width:15%;
-    border-radius: 15px 0px 0px 15px;
+    border-radius: 15px 0 0 15px;
     border:none;
-    padding: 0.83em 0px 0.83em 0px;
+    padding: 0.83em 0 0.83em 0;
 }
 #zonesaisieville{ /**zone de saisie**/ /*p2barre*/
     width:45%;
@@ -123,9 +127,9 @@ input:focus{ /*p2barre*/
 #boutonrecherche{ /**Bouton Rechercher**/ /*p2barre*/
     border:none;
     border-radius: 0px 15px 15px 0px;
-    background-color: var(--main-emcolor);
+    background-color: var(--main-color);
     color:#FFFFFF;
-    padding:0.83em 0.88em 0.83em 0.88em;
+    padding:0.83em 0.88em 0.83em 0.88em
 }
 #icone-recherche{ /*Icône de recherche qui s'affiche en small device uniquement en remplacement du texte recherche*/ /*p2barre*/
     display:none;
@@ -157,6 +161,16 @@ input:focus{ /*p2barre*/
     border-radius: 20px;
     padding: 1.87em;
 }
+#ensemble-cartes-hebergements .card-content, #ensemble-cartes-populaires .card-content { /*Contenant card-title - card-subtitle - rating*/ /*p3hebergement*/
+    padding:0 1em 0 1em;
+}
+#ensemble-cartes-hebergements .card-title, #ensemble-cartes-populaires .card-title { /*p3hebergement*/
+    margin-top: 0.62em;
+    margin-bottom: 0.25em;
+}
+#ensemble-cartes-hebergements .card-rating, #ensemble-cartes-populaires .card-rating { /*p3hebergement*/
+    margin-bottom: 0.25em;
+}
 #ancrehebergements{ /*Encart hébergement*/ /*p3hebergement*/
     width:68%;
 }
@@ -164,29 +178,17 @@ input:focus{ /*p2barre*/
     flex-wrap: wrap;
 }
 #ensemble-cartes-hebergements a{ /*Positionnement des cartes en deux rangées de trois cartes*/ /*p3hebergement*/
-    flex-basis:calc(33% - 30px);
+    flex-basis:calc(33% - 1em);
 }
 #ensemble-cartes-hebergements .card{ /*Carte contenue dans bloc article a - contenant img + card-content*/ /*p3hebergement*/
-    margin-top:33px;
+    margin-top:2.06em;
     flex-grow: 1;
 }
 #ensemble-cartes-hebergements img{ /*p3hebergement*/
     height:124px;
-    border-top-left-radius:20px;
-    border-top-right-radius: 20px;
-}
-#ensemble-cartes-hebergements .card-content { /*Contenant card-title - card-subtitle - rating*/ /*p3hebergement*/
-    padding:0 1em 0 1em;
-}
-#ensemble-cartes-hebergements .card-title { /*p3hebergement*/
-    margin-top: 10px;
-    margin-bottom: 4px;
-}
-#ensemble-cartes-hebergements .card-rating { /*p3hebergement*/
-    margin-bottom: 5px;
 }
 #afficherplushebergement{ /*Bouton "Afficher plus"*/ /*p3hebergement*/
-    margin-top:30px;
+    margin-top:1.66em;
 }
 /****** Populaires ***********/
 #encart-populaires { /*p3populaire*/
@@ -194,24 +196,14 @@ input:focus{ /*p2barre*/
     justify-content:flex-start;
 }
 #ensemble-cartes-populaires .card { /*Carte contenant img et cart-content*/ /*p3populaire*/
-    margin-top: 33px;
+    margin-top: 2.06em;
 }
 #ensemble-cartes-populaires img { /*p3populaire*/
     width: 33%;
     height: 146px;
-    border-top-left-radius: 20px;
-    border-bottom-left-radius: 20px;
 }
 #ensemble-cartes-populaires .card-content { /*Contenant card-title / card-subtitle / card-rating*/ /*p3populaire*/
     width: 67%;
-    padding : 0 1em 0 1em;
-}
-#ensemble-cartes-populaires .card-title { /*p3populaire*/
-    margin-top: 10px;
-    margin-bottom: 4px;
-}
-#ensemble-cartes-populaires .card-rating { /*p3populaire*/
-    margin-bottom: 5px;
 }
 /****** Activités ***********/
 #ancreactivites{ /*p4*/
@@ -227,13 +219,11 @@ input:focus{ /*p2barre*/
     width:25%;
 }
 #ensemble-cartes-activites .card{ /*Cartes contenues dans lien a - contient img et card-content*/ /*p4*/
-    width: calc(100% - 10px);
+    width: calc(100% - 0.62em);
     height:100%;
 }
 #ensemble-cartes-activites img{ /*p4*/
     height:380px;
-    border-top-left-radius:20px;
-    border-top-right-radius: 20px;
 }
 #ensemble-cartes-activites .card-content{ /*p4*/
     border-radius: 0 0 20px 20px;
@@ -268,7 +258,7 @@ footer li{ /*Eléments des listes*/ /*p5*/
         width:calc(100% - 50px);
     }
     #ensemble-cartes-populaires .card { /*p6populaire*/
-        margin-top: 20px;
+        margin-top: 3.12em;
     }
     #filtresrecherche{ /*p6filtre*/
         flex-wrap: wrap;
@@ -285,6 +275,9 @@ footer li{ /*Eléments des listes*/ /*p5*/
     header,#ensemble-cartes-populaires, #ensemble-cartes-hebergements, #ensemble-cartes-activites, footer{ /*p7header*/ /*p7hebergements*/ /*p7footer*/
         flex-direction:column;
     }
+    header nav, #encart-hebergements-et-populaires section, footer, #ensemble-cartes-populaires a,  #ensemble-cartes-activites,  #ensemble-cartes-activites a, #ensemble-cartes-activites .card{
+        width:100%;
+    }
     main{
         padding:0;
     }
@@ -292,11 +285,10 @@ footer li{ /*Eléments des listes*/ /*p5*/
         width:calc(100% - 60px);
         display:flex;
         justify-content: center;
-        padding:30px;
+        padding:1.87em;
     }
     header nav{ /*p7header*/
         border-bottom:2px solid var(--main-bg-color);
-        width:100%;
         padding:0;
     }
     header nav ul{ /*p7header*/
@@ -304,7 +296,7 @@ footer li{ /*Eléments des listes*/ /*p5*/
     }
     header nav li { /*p7header*/
         margin-right:0;
-        padding-bottom: 15px;
+        padding-bottom: 1em;
     }
     header nav li:hover { /*p7header*/
         border-bottom: 2px solid var(--main-color);
@@ -312,8 +304,8 @@ footer li{ /*Eléments des listes*/ /*p5*/
         line-height:20.78px;
     }
     #encart-recherche{ /*p7recherche*/
-        width:calc(100% - 40px);
-        padding:20px;
+        width:calc(100% - 2.5em);
+        padding:1.25em;
     }
     #barrederecherche{ /*p7recherche*/
         justify-content:space-between;
@@ -342,20 +334,16 @@ footer li{ /*Eléments des listes*/ /*p5*/
     #encart-hebergements-et-populaires section, footer{ /*p7hebergements*/
         padding:0;
         border-radius:0;
-        width:100%;
     }
-    #titre-icone-encartpopulaires, #ancrehebergements .section-title, #ensemble-cartes-populaires, #ensemble-cartes-hebergements{/*p7hebergements*/
-        padding:20px;
-        width:calc(100% - 40px);
+    #titre-icone-encartpopulaires, #ancrehebergements .section-title, #ensemble-cartes-populaires, #ensemble-cartes-hebergements, footer nav{/*p7hebergements*/
+        padding:1.25rem;
+        width:calc(100% - 2.5em);
     }
     #ensemble-cartes-populaires, #ensemble-cartes-hebergements, #ensemble-cartes-activites{/*p7hebergements*/
         gap:1em;
     }
     #ensemble-cartes-hebergements .card, #ensemble-cartes-populaires .card{/*p7hebergements*/
         margin-top:0;
-    }
-    #ensemble-cartes-populaires a{/*p7hebergements*/
-        width:100%;
     }
     #ancrehebergements .section-title, #ensemble-cartes-hebergements{/*p7hebergements*/
         background-color: white;
@@ -365,23 +353,13 @@ footer li{ /*Eléments des listes*/ /*p5*/
         min-height:auto;
     }
     #ancreactivites{ /*p7activites*/
-        padding:30px;
-        width:calc(100% - 60px)
+        padding:1.87em;
+        width:calc(100% - 3.74em)
     }
     #ensemble-cartes-activites{ /*p7activites*/
         height:auto;
-        width:100%;
-    }
-    #ensemble-cartes-activites a{ /*p7activites*/
-        width:100%;
-    }
-    #ensemble-cartes-activites .card{ /*p7activites*/
-        width:100%;
     }
     #ensemble-cartes-activites img{ /*p7activites*/
         height:141px;
-    }
-    footer nav{ /*p7footer*/
-        width:calc(100% - 40px);
     }
 }
