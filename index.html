@@ -24,23 +24,23 @@
         </nav>
     </header>
     <main>
-        <div class="encart-recherche flexcolumn">
+        <div id="encart-recherche" class="flexcolumn">
             <div>
                 <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
                 <p>En plein centre-ville ou pleine nature</p>
             </div>
             <form id="barrederecherche" class="flexrow">
-                <button class="boutonlocalisation fontmoy">
+                <button id="boutonlocalisation" class="fontmoy">
                     <i class="fa-solid fa-location-dot" style="color: black ;"></i>
                 </button>
-                <input type="text" class="zonesaisieville fontmoy weight700" placeholder="Marseille, France">
-                <button class="boutonrecherche fontmoy weight700">
-                    <span class="rechercher-texte">Rechercher</span>
-                    <span class="icone-recherche"><i class="fas fa-search"></i></span>
+                <input type="text" id="zonesaisieville" class="fontmoy weight700" placeholder="Marseille, France">
+                <button id="boutonrecherche" class="fontmoy weight700">
+                    <span id="rechercher-texte">Rechercher</span>
+                    <span id="icone-recherche"><i class="fas fa-search"></i></span>
                 </button> 
             </form>
-            <div class="filtresrecherche flexrow">
-                <div class="textefiltre fontmoy weight700">Filtres</div>
+            <div id="filtresrecherche" class="flexrow">
+                <div id="textefiltre" class="fontmoy weight700">Filtres</div>
                 <button class="boutonfiltre flexrow weight700">
                     <i class="fa-solid fa-money-bill-wave"></i>
                     Economique
@@ -58,15 +58,15 @@
                     Nos pépites
                 </button>
             </div>
-            <div class="texteinforesultatsrecherche flexrow">
+            <div id="texteinforesultatsrecherche" class="flexrow">
                 <i class="fa-solid fa-info"></i> 
                 Plus de 500 logements sont disponibles dans cette ville
             </div>
         </div>
-        <div class="encart-hebergements-et-populaires flexrow">
-            <section class="encart-hebergements" id="ancrehebergements"> 
+        <div id="encart-hebergements-et-populaires" class="flexrow">
+            <section id="ancrehebergements"> 
                 <h2 class="section-title">Hébergements à Marseille</h2>
-                <div class="ensemble-cartes-hebergements flexrow">
+                <div id="ensemble-cartes-hebergements" class="flexrow">
                     <a class="itemhebergement flexcolumn" href="#">
                         <article class="card">
                             <img src="./images/herbergements/fred-kleber.jpg" alt="Image de la chambre d'hôtel montrant le lit">
@@ -181,17 +181,17 @@
                             </div>
                         </article>
                     </a>
-                    <div class="afficherplushebergement fontmoy weight700">
+                    <div id="afficherplushebergement" class="fontmoy weight700">
                         <a href="#">Afficher plus</a>
                     </div>
                 </div>
             </section>
-            <section class="encart-populaires flexcolumn"> 
-                <div class="titre-icone-encartpopulaires flexrow">
+            <section id="encart-populaires" class="flexcolumn"> 
+                <div id="titre-icone-encartpopulaires" class="flexrow">
                     <h2 class="section-title">Les plus populaires</h2>
                     <i class="fa-solid fa-chart-line" aria-hidden="true"></i>
                 </div>
-                <div class="ensemble-cartes-populaires flexcolumn">
+                <div id="ensemble-cartes-populaires" class="flexcolumn">
                     <a href="#">
                         <article class="card flexrow">
                             <img src="./images/herbergements/emile-guillemot.jpg" alt="Image de la chambre d'hôtel montrant un lit">
@@ -254,7 +254,7 @@
         </div>
         <div class="flexcolumn" id="ancreactivites"> 
             <h2 class="section-title">Activités à Marseille</h2>   
-            <div class="ensemble-cartes-activites flexrow">    
+            <div id="ensemble-cartes-activites" class="flexrow">    
                 <a href="#">
                     <article class="card">
                         <img src="./images/activites/reno-laithienne.jpg" alt="Image du vieux port">
