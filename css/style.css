@@ -72,9 +72,9 @@ header nav li, #ensemble-cartes-hebergements img, #afficherplushebergement, #ens
 .alignicenter{
     align-items:center;
 }
-#ensemble-cartes-hebergements img, #ensemble-cartes-populaires img, #ensemble-cartes-activites img{
+#ensemble-cartes-hebergements img, #ensemble-cartes-activites img{
     border-top-left-radius: 20px;
-    border-bottom-left-radius: 20px;
+    border-top-right-radius: 20px;
 }
 /****** HEADER ***********/
 #logoheader { /*Encart comprenant l'image logo*/ /*p1logo*/
@@ -201,6 +201,8 @@ input:focus{ /*p2barre*/
 #ensemble-cartes-populaires img { /*p3populaire*/
     width: 33%;
     height: 146px;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
 }
 #ensemble-cartes-populaires .card-content { /*Contenant card-title / card-subtitle / card-rating*/ /*p3populaire*/
     width: 67%;
