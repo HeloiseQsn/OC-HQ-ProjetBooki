@@ -26,7 +26,7 @@ a {
 .card {
     background-color: white;
     border-radius: 20px;
-    padding: 5px;
+    padding: 0.31em;
     filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
 }
 .card img {
@@ -45,7 +45,7 @@ h3{
 h4{
     font-size: 18px;
     line-height: 21.13px;
-    padding-bottom: 15px;
+    padding-bottom: 0.83em;
 }
 .fontmoy {
     font-size: 18px;
@@ -74,7 +74,7 @@ header nav li, #ensemble-cartes-hebergements img, #afficherplushebergement, #ens
 }
 /****** HEADER ***********/
 #logoheader { /*Encart comprenant l'image logo*/ /*p1logo*/
-    padding:30px 50px 30px 50px;
+    padding: 1.87em 50px 1.87em 50px;
 }
 #logo { /*image logo*/ /*p1logo*/
     width: 61.09px;
@@ -87,7 +87,7 @@ header nav ul { /*Liste dans le menu de navigation*/ /*p1nav*/
     gap: 4.25em;
 }
 header nav li { /*Eléments de la liste : Hébergement / Activités*/ /*p1nav*/
-    padding-top:15px; 
+    padding-top:1em; 
     text-align:center; /*nécessaire dans la version mobile*/
 }
 header nav li:hover { /*Barre bleu + changement de couleur de police des éléments de la liste lors du survol de la souris dessus*/ /*p1nav*/
@@ -113,7 +113,7 @@ input:focus{ /*p2barre*/
     width:15%;
     border-radius: 15px 0px 0px 15px;
     border:none;
-    padding: 15px 0px 15px 0px;
+    padding: 0.83em 0px 0.83em 0px;
 }
 #zonesaisieville{ /**zone de saisie**/ /*p2barre*/
     width:45%;
@@ -123,9 +123,9 @@ input:focus{ /*p2barre*/
 #boutonrecherche{ /**Bouton Rechercher**/ /*p2barre*/
     border:none;
     border-radius: 0px 15px 15px 0px;
-    background-color: var(--main-color);
+    background-color: var(--main-emcolor);
     color:#FFFFFF;
-    padding:15px 16px 15px 16px;
+    padding:0.83em 0.88em 0.83em 0.88em;
 }
 #icone-recherche{ /*Icône de recherche qui s'affiche en small device uniquement en remplacement du texte recherche*/ /*p2barre*/
     display:none;
@@ -155,7 +155,7 @@ input:focus{ /*p2barre*/
 #encart-hebergements-et-populaires section { /*Blocs hébergement / populaire*/ /*p3*/
     background-color: var(--main-bg-color);
     border-radius: 20px;
-    padding: 30px;
+    padding: 1.87em;
 }
 #ancrehebergements{ /*Encart hébergement*/ /*p3hebergement*/
     width:68%;
@@ -218,7 +218,7 @@ input:focus{ /*p2barre*/
     width:calc(100% - 50px);
     justify-content:center;
     gap:1.87em;
-    padding:30px;
+    padding:1.87em;
 }
 #ensemble-cartes-activites{ /*Contenant les cartes*/ /*p4*/
     gap:1.87em;
@@ -241,7 +241,7 @@ input:focus{ /*p2barre*/
 }
 footer nav{ /*Trois sections*/ /*p5*/
     width:33%;
-    padding:20px;
+    padding:1.25em;
     background-color: var(--main-bg-color);
 }
 footer ul{ /*Listes*/ /*p5*/
