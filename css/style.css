@@ -104,6 +104,9 @@ header nav li:hover { /*Barre bleu + changement de couleur de police des éléme
     gap:2.18em;
     margin-bottom:1.87em;
 }
+#encart-recherche p{
+    padding:1em 0 1em 0;
+}
 #barrederecherche{  /***Barre de recherche***/ /*p2barre*/
     max-width:377px;
     border-radius: 15px;
@@ -230,6 +233,9 @@ input:focus{ /*p2barre*/
 #ensemble-cartes-activites .card-content{ /*p4*/
     border-radius: 0 0 20px 20px;
     padding: 1em;
+}
+footer{
+    margin-top:2.18em;
 }
 footer nav{ /*Trois sections*/ /*p5*/
     width:33%;
