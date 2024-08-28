@@ -84,7 +84,7 @@ header nav { /*Menu de navigation*/ /*p1nav*/
     padding:0px 50px 0px 50px;
 }
 header nav ul { /*Liste dans le menu de navigation*/ /*p1nav*/
-    gap:68px;
+    gap: 4.25em;
 }
 header nav li { /*Eléments de la liste : Hébergement / Activités*/ /*p1nav*/
     padding-top:15px; 
@@ -97,13 +97,13 @@ header nav li:hover { /*Barre bleu + changement de couleur de police des éléme
 }
 /****** Main ***********/
 #encart-recherche{ /*Encart de recherche*/ /*p2*/
-    gap:35px;
+    gap:2.18em;
     margin-bottom: 30px;
 }
 #barrederecherche{  /***Barre de recherche***/ /*p2barre*/
     max-width:377px;
     border-radius: 15px;
-    gap:24px;
+    gap:1.5em;
     border:1px solid var(--main-bg-color);
 }
 input:focus{ /*p2barre*/
@@ -131,7 +131,7 @@ input:focus{ /*p2barre*/
     display:none;
 }
 #filtresrecherche{ /***Encart des filtres de recherche***/ /*p2filtre*/
-    gap:15px;
+    gap:1em;
 }
 .boutonfiltre{ /*Boutons de filtres*/ /*p2filtre*/
     height:50px;
@@ -139,18 +139,18 @@ input:focus{ /*p2barre*/
     border: 2px solid #D9D9D9;
     background-color: transparent;
     padding:1em;
-    gap:10px;
+    gap:0.58em;
     font-size:17px;
 }
 .boutonfiltre:hover{ /*Changement couleur de fond lors du survolement de la souris sur bouton de filtre*/ /*p2filtre*/
     background-color:var(--filter-bg-color);
 }
 #texteinforesultatsrecherche{ /*Texte d'info sous la barre de filtres*/ /*p2texte*/
-    gap:10px;
+    gap:0.62em;
 }
 /****** Hebergements et Populaires ***********/
 #encart-hebergements-et-populaires {  /*p3*/
-    gap:40px;
+    gap:2.5em;
 }
 #encart-hebergements-et-populaires section { /*Blocs hébergement / populaire*/ /*p3*/
     background-color: var(--main-bg-color);
@@ -217,11 +217,11 @@ input:focus{ /*p2barre*/
 #ancreactivites{ /*p4*/
     width:calc(100% - 50px);
     justify-content:center;
-    gap:30px;
+    gap:1.87em;
     padding:30px;
 }
 #ensemble-cartes-activites{ /*Contenant les cartes*/ /*p4*/
-    gap:30px;
+    gap:1.87em;
 }
 #ensemble-cartes-activites a { /*p4*/
     width:25%;
@@ -245,7 +245,7 @@ footer nav{ /*Trois sections*/ /*p5*/
     background-color: var(--main-bg-color);
 }
 footer ul{ /*Listes*/ /*p5*/
-    gap:15px;
+    gap:1em;
 }
 footer li{ /*Eléments des listes*/ /*p5*/
     line-height:30px;
@@ -349,7 +349,7 @@ footer li{ /*Eléments des listes*/ /*p5*/
         width:calc(100% - 40px);
     }
     #ensemble-cartes-populaires, #ensemble-cartes-hebergements, #ensemble-cartes-activites{/*p7hebergements*/
-        gap:15px;
+        gap:1em;
     }
     #ensemble-cartes-hebergements .card, #ensemble-cartes-populaires .card{/*p7hebergements*/
         margin-top:0;
