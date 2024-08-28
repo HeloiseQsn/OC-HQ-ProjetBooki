@@ -182,9 +182,6 @@ input:focus{ /*p2barre*/
     margin-top: 10px;
     margin-bottom: 4px;
 }
-#ensemble-cartes-hebergements .card-subtitle { /*p3hebergement*/
-    margin: 0;
-}
 #ensemble-cartes-hebergements .card-rating { /*p3hebergement*/
     margin-bottom: 5px;
 }
@@ -212,9 +209,6 @@ input:focus{ /*p2barre*/
 #ensemble-cartes-populaires .card-title { /*p3populaire*/
     margin-top: 10px;
     margin-bottom: 4px;
-}
-#ensemble-cartes-populaires .card-subtitle { /*p3populaire*/
-    margin: 0;
 }
 #ensemble-cartes-populaires .card-rating { /*p3populaire*/
     margin-bottom: 5px;
@@ -252,8 +246,6 @@ footer nav{ /*Trois sections*/ /*p5*/
 }
 footer ul{ /*Listes*/ /*p5*/
     gap:15px;
-    padding-left:0px;
-    margin:0;
 }
 footer li{ /*Eléments des listes*/ /*p5*/
     line-height:30px;
@@ -325,6 +317,7 @@ footer li{ /*Eléments des listes*/ /*p5*/
     }
     #barrederecherche{ /*p7recherche*/
         justify-content:space-between;
+        max-width:100%;
     }
     #rechercher-texte{ /*p7recherche*/
         display:none;
