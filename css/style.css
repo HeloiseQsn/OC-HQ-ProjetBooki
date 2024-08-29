@@ -229,7 +229,8 @@ input:focus{
     height:100%;
 }
 #ensemble-cartes-activites img{ 
-    height:380px;
+    max-height:380px;
+    aspect-ratio:9/10;
 }
 #ensemble-cartes-activites .card-content{ 
     border-radius: 0 0 20px 20px;
