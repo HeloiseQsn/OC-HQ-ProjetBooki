@@ -188,7 +188,8 @@ input:focus{
     flex-grow: 1;
 }
 #ensemble-cartes-hebergements img{
-    height:124px;
+    max-height:124px;
+    aspect-ratio:6/10;
 }
 #afficherplushebergement{ /*Bouton "Afficher plus"*/
     margin-top:1.66em;
