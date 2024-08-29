@@ -283,7 +283,7 @@ footer li{ /*Eléments des listes*/
     header,#ensemble-cartes-populaires, #ensemble-cartes-hebergements, #ensemble-cartes-activites, footer{ 
         flex-direction:column;
     }
-    header nav, #encart-hebergements-et-populaires section, footer, #ensemble-cartes-populaires a,  #ensemble-cartes-activites,  #ensemble-cartes-activites a, #ensemble-cartes-activites .card{
+    header nav, #encart-hebergements-et-populaires section, footer, #ancrehebergement .section-title, #ensemble-cartes-populaires a,  #ensemble-cartes-activites,  #ensemble-cartes-activites a, #ensemble-cartes-activites .card{
         width:100%;
     }
     main{
