@@ -189,7 +189,7 @@ input:focus{
 }
 #ensemble-cartes-hebergements img{
     max-height:124px;
-    aspect-ratio:6/10;
+    aspect-ratio:2/1;
 }
 #afficherplushebergement{ /*Bouton "Afficher plus"*/
     margin-top:1.66em;
@@ -203,8 +203,9 @@ input:focus{
     margin-top: 2.06em;
 }
 #ensemble-cartes-populaires img {
-    width: 33%;
-    height: 146px;
+    aspect-ratio: 12/14;
+    max-width: 33%;
+    min-height:146px;
     border-top-left-radius: 20px;
     border-bottom-left-radius: 20px;
 }
@@ -230,7 +231,7 @@ input:focus{
 }
 #ensemble-cartes-activites img{ 
     max-height:380px;
-    aspect-ratio:9/10;
+    aspect-ratio:3/4;
 }
 #ensemble-cartes-activites .card-content{ 
     border-radius: 0 0 20px 20px;
@@ -256,6 +257,9 @@ footer li{ /*Eléments des listes*/
 @media (max-width: 1024px) {
     #encart-hebergements-et-populaires {
         flex-direction:column;
+    }
+    #ensemble-cartes-populaires a{
+        display:flex;
     }
     #ensemble-cartes-populaires{
         flex-direction:row;
