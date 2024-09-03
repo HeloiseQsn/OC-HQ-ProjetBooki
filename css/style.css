@@ -237,6 +237,7 @@ input:focus{
     border-radius: 0 0 20px 20px;
     padding: 1em;
 }
+/*FOOTER*/
 footer{
     margin-top:2.18em;
 }
@@ -260,13 +261,11 @@ footer li{ /*Eléments des listes*/
     }
     #ensemble-cartes-populaires a{
         display:flex;
+        width:31%;
     }
     #ensemble-cartes-populaires{
         flex-direction:row;
         justify-content:space-between;
-    }
-    #ensemble-cartes-populaires a{
-        width:31%;
     }
     #ancrehebergements, #encart-populaires{
         width:calc(100% - 50px);
