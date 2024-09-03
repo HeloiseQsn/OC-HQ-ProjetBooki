@@ -236,8 +236,8 @@ input:focus{
 #ensemble-cartes-activites .card-content{ 
     border-radius: 0 0 20px 20px;
     padding: 1em;
+    flex: 1 1 auto;
 }
-/*FOOTER*/
 footer{
     margin-top:2.18em;
 }
